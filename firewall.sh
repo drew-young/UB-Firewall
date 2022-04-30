@@ -22,8 +22,8 @@ echo pass out quick proto { udp tcp } from 10.3.1.60 to any port { 389 } >> pf.c
 
 
 #####10.3.2.10 - HTTP
-echo pass in quick proto { udp tcp } from any to 10.3.2.10 port { 80 } >> pf.conf
-echo pass out quick proto { udp tcp } from 10.3.2.10 to any port { 80 } >> pf.conf
+echo pass in quick proto { udp tcp } from any to 10.3.2.10 port { 8000 } >> pf.conf
+echo pass out quick proto { udp tcp } from 10.3.2.10 to any port { 8000 } >> pf.conf
 
 
 ###10.3.1.10 - PING
